@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="https://httpbin.org/post" method="POST">
+
+        <p>
+            <label for="Nombre">Nombre: </label>
+            <input type="text" id="Nombre" name="Nombre" required>
+        </p>
+        <p>
+            <label for="Primer">Primer: </label>
+            <input type="text" id="Primer" name="Primer" required>
+        </p>
+        <p>
+            <label for="Segon">Segon: </label>
+            <input type="text" id="Segon" name="Segon" required>
+        </p>
+        <p>
+            <label for="Username">username: </label>
+            <input type="text" id="username" name="username" required>
+        </p>
+        <p>
+            <label for="Correo">Correo: </label>
+            <input type="email" id="Correo" name="Correo" required>
+        </p>
+        <p>
+            <label for="password">Contraseña: </label>
+            <input type="password" id="password" name="password" required>
+        </p>
+        <p>
+            <label for="rpassword">Reescribir Contraseña: </label>
+            <input type="password" id="rpassword" name="rpassword" required>
+        </p>
+        <p>
+            <label for="Bd">Fecha de Nacimiento: </label>
+            <input type="date" id="Bd" name="Bd" required>
+        </p>
+        <p>
+            <label for="gendre">Género: </label>
+            <select id="genero" name="genero">
+                <option value="Masculino">Masculino</option> 
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+        </p>
+        <p>
+            <label>Intereses:</label>
+            <input type="checkbox" name="intereses" value="Programacion"> Programación
+            <input type="checkbox" name="intereses" value="Diseno"> Diseño
+            <input type="checkbox" name="intereses" value="Seguridad"> Seguridad Informática
+        </p>
+        
+
+        
+    </form>
+</body>
+</html>
+
+<!-- Conclusiones de esta práctica: <form>(se le puede pasar action y method) tiene inputs, ,-->
