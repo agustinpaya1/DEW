@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Selección de Canciones Adaptable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        /* Grid CSS que adapta las columnas al tamaño de la ventana [cite: 79] */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .grid-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .grid-item:hover {
+            background-color: #e9e9e9;
+        }
+        .play-button {
+            width: 50px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulario de Selección de Canciones de Hard Rock</h2>
+    <p>Elige hasta 10 canciones:</p>
+    
+    <form action="https://httpbin.org/get" method="GET">
+        <div class="grid-container">
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e61"> Back in Black - AC/DC</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e62"> Smoke on the Water - Deep Purple</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e63"> Sweet Child O' Mine - Guns N' Roses</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e64"> Livin' on a Prayer - Bon Jovi</label>
+            
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e65"> Highway to Hell - AC/DC</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e66"> Whole Lotta Love - Led Zeppelin</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e67"> Born to Be Wild - Steppenwolf</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e68"> Paradise City - Guns N' Roses</label>
+            
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e69"> Rock You Like a Hurricane - Scorpions</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e70"> Don't Stop Believin' - Journey</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e71"> You Shook Me All Night Long - AC/DC</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e72"> Breaking the Law - Judas Priest</label>
+            
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e73"> Poison - Alice Cooper</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e74"> Here I Go Again - Whitesnake</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e75"> We Will Rock You - Queen</label>
+            <label class="grid-item"><input type="checkbox" name="canciones" value="1a2b3c4d5e76"> Thunderstruck - AC/DC</label>
+        </div>
+        
+        <br>
+        <label>
+            <input type="checkbox" name="play_now" value="true"> Reproducir inmediatamente
+        </label>
+        <br>
+        
+        <input type="image" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Play_Button_-_Media_Player_-_Green.svg" alt="Reproducir" class="play-button">
+        <br><br>
+        
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
