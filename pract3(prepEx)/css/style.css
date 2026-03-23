@@ -1,0 +1,57 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e2f183; /* Color verde lima suave de la imagen */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en el eje horizontal */
+}
+
+.div-style {
+    background-color: white;
+    border-radius: 8px; /* Bordes redondeados según el modelo de cajas [cite: 2339] */
+    margin: 10px 0;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px; /* Limitamos el ancho para que se vea igual que la captura */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+/* Estilos específicos para la cabecera (Logo, Nombre y Foto) */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos de la cabecera */
+    margin-bottom: 20px;
+}
+
+/* Estilo para la tabla de horario [cite: 2726] */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Quita el espacio entre bordes */
+    background-color: white;
+}
+
+th {
+    background-color: #007bff; /* Azul intenso de Bootstrap/Imagen [cite: 2684] */
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9em;
+}

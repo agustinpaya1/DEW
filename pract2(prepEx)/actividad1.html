@@ -49,13 +49,48 @@
         </p>
         <p>
             <label>Intereses:</label>
-            <input type="checkbox" name="intereses" value="Programacion"> Programación
-            <input type="checkbox" name="intereses" value="Diseno"> Diseño
-            <input type="checkbox" name="intereses" value="Seguridad"> Seguridad Informática
+                <input type="checkbox" name="intereses" value="Programacion"> Programación
+                <input type="checkbox" name="intereses" value="Diseno"> Diseño
+                <input type="checkbox" name="intereses" value="Seguridad"> Seguridad Informática
         </p>
-        
+        <p>
+            <label>Tipo de Usuario:</label>
+            <input type="radio" name="tipo_usuario" value="Estudiante" required> Estudiante
+            <input type="radio" name="tipo_usuario" value="Profesor" required> Profesor
+            <input type="radio" name="tipo_usuario" value="Administrativo" required> Administrativo
+        </p>
 
-        
+        <p>
+            <label for="universidad">Universidad:</label>
+            <select id="universidad" name="universidad" required>
+                <optgroup label="Valencia">
+                    <option value="UV">Universitat de València</option>
+                    <option value="UPV">Universitat Politècnica de València</option>
+                </optgroup>
+                <optgroup label="Alicante">
+                    <option value="UA">Universitat d'Alacant</option>
+                    <option value="UMH">Universitat Miguel Hernández</option>
+                </optgroup>
+                <optgroup label="Castellón">
+                    <option value="UJI">Universitat Jaume I</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="foto">Subir Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required>
+        </p>
+
+        <p>
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" cols="50" rows="6"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Registrarse">
+            <input type="reset" value="Borrar">
+        </p>
     </form>
 </body>
 </html>
